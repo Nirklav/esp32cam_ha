@@ -1,0 +1,12 @@
+{
+    "domain": "esp32_camera",
+    "name": "Esp32 Camera",
+    "version": "1.0.0",
+    "codeowners": [],
+    "dependencies": [],
+    "documentation": "https://github.com/Nirklav/esp32cam_ha/blob/master/README.md",
+    "config_flow": true,
+    "integration_type": "hub",
+    "iot_class": "local_push",
+    "requirements": []
+}

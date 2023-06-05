@@ -1,0 +1,26 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "esp32_cam_ip": "ESP32 Camera Ip",
+                    "esp32_cam_port": "ESP32 Camera Port",
+                    "name": "[%key:common::config_flow::data::name%]",
+                    "password": "[%key:common::config_flow::data::password%]"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "esp32_cam_ip": "ESP32 Camera Ip",
+                    "esp32_cam_port": "ESP32 Camera Port",
+                    "name": "[%key:common::config_flow::data::name%]",
+                    "password": "[%key:common::config_flow::data::password%]"
+                }
+            }
+        }
+    }
+}
