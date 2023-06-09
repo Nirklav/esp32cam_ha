@@ -118,7 +118,6 @@ class ESP32Camera(Camera):
         writer.close()
         await writer.wait_closed()
 
-
     async def async_camera_image(
         self, width: int | None = None, height: int | None = None
     ) -> bytes | None:
@@ -133,9 +132,5 @@ class ESP32Camera(Camera):
                     LOGGER.error("Error in task: {}".format(exc))
 
             self._task = asyncio.create_task(self.async_stream())
-            return self._placeholder
 
-        if self._image is not None:
-            return self._image
-
-        return self._placeholder
+        return self._image or self._placeholder
